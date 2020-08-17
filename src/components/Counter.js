@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 
-import Counter from "./Counter"
+import Value from "./Value";
+import Control from "./Control";
 
 const propTypes = {};
 const defaultProps = {};
 
-class App extends Component{
+class Counter extends Component{
     constructor(props){
         super(props);
     }
@@ -14,13 +15,14 @@ class App extends Component{
     render(){
         return(
             <div>
-                <Counter />
+                <Value />
+                <Control />
             </div>
         )
     }
 }
 
-App.propTypes = propTypes;
-App.defaultProps = defaultProps;
+Counter.propTypes = propTypes;
+Counter.defaultProps = defaultProps;
 
-export default App;
+export default Counter;
